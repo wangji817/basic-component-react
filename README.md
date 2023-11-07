@@ -4,6 +4,7 @@ Easy to copy into the project for later use。
 <br/>
 <h1>Plugin List</h1>
 <h4>1.CmrCustVideo</h4>
+
 	<CmrCustVideo data={{
 		videoUrl:"视频地址",
 		paddingSize: "15",//间距
