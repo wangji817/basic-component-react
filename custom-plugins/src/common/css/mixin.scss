@@ -1,0 +1,104 @@
+/**使ios滚动更加平滑**/
+@mixin smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+/**适用于inline-block或block**/
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/**控制文字显示行数**/
+@mixin line-clamp($lines) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+  max-height: 150% * $lines;
+}
+
+@mixin flex-box() {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  display: flex;
+  display: -webkit-flex;
+}
+
+@mixin child-flex() {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  flex: 1;
+  display: block;
+}
+
+@function pxTorem($px) {
+  @return $px/30+rem;
+}
+
+@function cssrem($px, $percent) {
+  @if($percent) {
+    @return $px/$percent+rem;
+  }
+
+  @return $px/15+rem;
+}
+
+@mixin transformXYZ($form, $xyz, $percent) {
+  @if($form==top) {
+    top: $percent;
+  }
+
+  @else if($form==topleft) {
+    top: $percent;
+    left: $percent;
+  }
+
+  @else {
+    #{$form}: $percent;
+  }
+
+  $position:translate3d(0, 0, 0);
+
+  @if ($xyz==x) {
+    $position: translate3d(-$percent, 0, 0);
+  }
+
+  @elseif ($xyz==y) {
+    $position: translate3d(0, -$percent, 0);
+  }
+
+  @elseif ($xyz==z) {
+    $position: translate3d(0, 0, -$percent);
+  }
+
+  @elseif ($xyz==xy) {
+    $position: translate3d(-$percent, -$percent, 0);
+  }
+
+  @elseif ($xyz==xz) {
+    $position: translate3d(-$percent, 0, -$percent);
+  }
+
+  @elseif ($xyz==yz) {
+    $position: translate3d(0, -$percent, -$percent);
+  }
+
+  @elseif ($xyz==xyz) {
+    $position: translate3d(-$percent, -$percent, -$percent);
+  }
+
+  transform:$position;
+  -webkit-transform:$position;
+}
+
+@mixin borderRadius($px) {
+  border-radius: $px;
+  -webkit-border-radius: $px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}

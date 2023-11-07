@@ -1,0 +1,20 @@
+{
+  "name": "basic-component-react",
+  "version": "1.0.0",
+  "description": "This is a basic component written in the React framework, function component+hooks。<br/>\r Easy to copy into the project for later use。\r <br/>\r <h1>Plugin List</h1>\r <h4>1.CmrCustVideo</h4>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangji817/basic-component-react.git"
+  },
+  "author": "night",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangji817/basic-component-react/issues"
+  },
+  "homepage": "https://github.com/wangji817/basic-component-react#readme",
+  "node-version": "16.15.0"
+}

@@ -1,0 +1,40 @@
+@import '../../common/css/config.scss';
+@import '../../common/css//mixin.scss';
+
+.CmrCustVideo {
+    position: relative;
+
+    canvas,
+    video {
+        width: 100%;
+        position: relative;
+        background-color: #000;
+    }
+
+    .playIcon {
+        background: url(//cdn.cmread.com/comment/image/5527c1c8a1d188c8056a750e9f194f05d5a71ee020eb/pic.jpg) no-repeat;
+        background-size: 100% auto;
+        position: absolute;
+        width: 2.4rem;
+        height: 2.4rem;
+        @include transformXYZ(topleft, xy, 50%);
+        z-index: 5;
+    }
+
+    .canvas-main {
+        padding: 0;
+        background-color: #000;
+        position: relative;
+    }
+}
+
+.videoFix {
+    overflow: hidden;
+    position: relative;
+
+    video {
+        width: 100%;
+        position: absolute;
+        left: 500%;
+    }
+}

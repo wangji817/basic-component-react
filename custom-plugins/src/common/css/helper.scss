@@ -1,0 +1,40 @@
+@mixin text-overflow{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+/**line clamp,zhangsai,2017/3/10,start**/
+/**控制文字显示行数**/
+@mixin line-clamp($lines){
+  text-overflow:ellipsis;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$lines;
+  overflow:hidden;
+  max-height:150% * $lines;
+  display:-webkit-box;
+}
+/**line clamp,zhangsai,2017/3/10,end**/
+/**清楚浮动**/
+@mixin clearfix{
+  &:before,
+  &:after{
+    content:"";
+    display:table;}
+  &:after{
+    clear:both;
+    overflow:hidden;}
+}
+@mixin flex-box(){
+  display:-moz-box;
+  display:-webkit-box;
+  display:box;
+  display:flex;
+  display:-webkit-flex;
+}
+@mixin child-flex(){
+  -moz-box-flex:1;
+  -webkit-box-flex:1;
+  box-flex:1;
+  flex:1;
+  display:block;
+}
