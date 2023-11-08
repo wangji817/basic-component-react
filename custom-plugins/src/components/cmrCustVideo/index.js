@@ -223,7 +223,7 @@ const CmrCustVideo = forwardRef((props, ref) => {
 	//画播放按钮
 	const drawPlayIcon = () => {
 		if (playIconDrawFlag) { return };
-		const playIconUrl = "//cdn.cmread.com/comment/image/5527c1c8a1d188c8056a750e9f194f05d5a71ee020eb/pic.jpg";
+		const playIconUrl = "/play.jpg";
 		const image = new Image();
 		image.src = playIconUrl;
 		image.crossOrigin = "anonymous";
