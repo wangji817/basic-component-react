@@ -1,8 +1,8 @@
-import './App.css';
+import './App.scss';
 import CmrCustVideo from './components/cmrCustVideo';
 import { useRef } from "react";
 
-const videoUrl = "//mgcdn.migucloud.com/vi0/ftp/miguread/CLOUD1000194111/54/1ctd0I2B38ILDsGD0qeEMP4sim54.mp4?duration=54&owner=198&quality=54&timestamp=20170915102011&title=yuanzun_sc54.mp4&vid=1ctd0I2B38ILDsGD0qeE&para1=yyy&para2=xxx"
+const videoUrl = "/1.mp4";
 export default function App() {
   const custVideoRef = useRef();
   return (
