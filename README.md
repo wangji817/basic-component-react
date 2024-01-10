@@ -3,7 +3,7 @@ This is a basic component written in the React framework, function component+hoo
 Easy to copy into the project for later use。
 <br/>
 <h1>Plugin List</h1>
-<h4>1.CmrCustVideo</h4>
+<h4>CmrCustVideo</h4>
 
 	<CmrCustVideo data={{
 		videoUrl:"视频地址",
@@ -16,6 +16,6 @@ Easy to copy into the project for later use。
 		controls: "controls",//是否展示原生控件，如果展示原生控件，则隐藏，H5的播放按钮，需视频类型是normal下生效，canvas下没有
 	}}/>
 
-<h4>1.Cmrpaint</h4>
+<h4>Cmrpaint</h4>
 
 	<Cmrpaint options={{}} className="mypaint" width={375} height={200} pix={2} />
