@@ -1,5 +1,6 @@
 import './App.scss';
 import CmrCustVideo from './components/cmrCustVideo';
+import Cmrpaint from './components/cmrpaint';
 import { useRef } from "react";
 
 export default function App() {
@@ -10,7 +11,7 @@ export default function App() {
       <CmrCustVideo data={{
         videoUrl,
         className: "my-video",
-        paddingSize: 10,
+        paddingSize: 0,
         initFlag: true,
         childrenPosition: "top",
         videoType: "normal",
@@ -32,7 +33,7 @@ export default function App() {
       <CmrCustVideo data={{
         videoUrl,
         className: "my-video",
-        paddingSize: 10,
+        paddingSize: 0,
         initFlag: true,
         childrenPosition: "top",
         videoType: "canvas",
@@ -51,6 +52,7 @@ export default function App() {
           console.warn("waiting start", event);
         }}
       ><div className="cust-title">我是标题</div></CmrCustVideo>
+      <Cmrpaint options={{}} className="mypaint" width={375} height={200} pix={2} />
     </div>
   );
 }

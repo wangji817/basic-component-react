@@ -25,6 +25,14 @@
         padding: 0;
         background-color: #000;
         position: relative;
+
+        .cust-title {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            text-align: center;
+        }
     }
 }
 
