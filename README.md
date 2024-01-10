@@ -4,6 +4,7 @@ Easy to copy into the project for later use。
 <br/>
 <h1>Plugin List</h1>
 <h4>CmrCustVideo</h4>
+<h6>视频组件，可自定义设置video还是canvas渲染，可复写自定义播放器</h6>
 
 	<CmrCustVideo data={{
 		videoUrl:"视频地址",
@@ -17,5 +18,6 @@ Easy to copy into the project for later use。
 	}}/>
 
 <h4>Cmrpaint</h4>
+<h6>canvas毛笔组件，可兼容pc和移动端，毛笔写字</h6>
 
 	<Cmrpaint options={{}} className="mypaint" width={375} height={200} pix={2} />
