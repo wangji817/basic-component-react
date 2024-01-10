@@ -15,3 +15,7 @@ Easy to copy into the project for later use。
 		videoType: "canvas",//视频类型，默认normal，video标签，可用canvas，枚举值normal，canvas
 		controls: "controls",//是否展示原生控件，如果展示原生控件，则隐藏，H5的播放按钮，需视频类型是normal下生效，canvas下没有
 	}}/>
+
+<h4>1.Cmrpaint</h4>
+
+	<Cmrpaint options={{}} className="mypaint" width={375} height={200} pix={2} />
