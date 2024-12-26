@@ -3,7 +3,7 @@
  * @author wj
  * @description 引入自定义样式类表，减少样式开发
  * @property {object} data 
- * @example <CmrTailwindcss data={object}/>
+ * @example <CmrTailwindcss pxToRem={15}>{xxx}</CmrTailwindcss>
  */
 import './index.scss';
 import { useEffect, useState, useRef, useImperativeHandle, forwardRef } from "react";

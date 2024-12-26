@@ -21,3 +21,11 @@ Easy to copy into the project for later use。
 <h6>canvas毛笔组件，可兼容pc和移动端，毛笔写字</h6>
 
 	<Cmrpaint options={{}} className="mypaint" width={375} height={200} pix={2} />
+
+<h4>CmrTailwindcss</h4>
+<h6>自定义css组件，可兼容pc和移动端，可添加修改</h6>
+
+	<CmrTailwindcss pxToRem={15-'自适应比例，默认1rem=15px'}>
+		<div>创建子children，或不写</div>
+	</CmrTailwindcss>	
+	
